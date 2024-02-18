@@ -95,6 +95,18 @@
         "lng": "12.436523437500002"
       },
       "id": 98443200
+    },
+    {
+      "cityName": "Amsterdam",
+      "country": "Netherlands (Kingdom of the)",
+      "emoji": "🇳🇱",
+      "date": "2024-02-18T19:30:50.045Z",
+      "notes": "nice",
+      "position": {
+        "lat": "52.482780222078226",
+        "lng": "5.273437500000001"
+      },
+      "id": 98443201
     }
   ]
 }
