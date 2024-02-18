@@ -59,54 +59,6 @@
         "lng": -43.196388
       },
       "id": 17806753
-    },
-    {
-      "cityName": "Ankara",
-      "country": "Turkiye",
-      "emoji": "🇹🇷",
-      "date": "2024-02-18T19:02:34.535Z",
-      "notes": "Nice place",
-      "position": {
-        "lat": "39.99395569397331",
-        "lng": "32.78320312500001"
-      },
-      "id": 98443198
-    },
-    {
-      "cityName": "Kragujevac",
-      "country": "Serbia",
-      "emoji": "🇷🇸",
-      "date": "2024-02-18T19:10:14.556Z",
-      "notes": "asd",
-      "position": {
-        "lat": "44.10336537791152",
-        "lng": "20.566406250000004"
-      },
-      "id": 98443199
-    },
-    {
-      "cityName": "Todi",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2024-02-18T19:11:23.287Z",
-      "notes": "ds",
-      "position": {
-        "lat": "42.84375132629023",
-        "lng": "12.436523437500002"
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Amsterdam",
-      "country": "Netherlands (Kingdom of the)",
-      "emoji": "🇳🇱",
-      "date": "2024-02-18T19:30:50.045Z",
-      "notes": "nice",
-      "position": {
-        "lat": "52.482780222078226",
-        "lng": "5.273437500000001"
-      },
-      "id": 98443201
     }
   ]
 }
