@@ -8,6 +8,7 @@ import Button from "./Button";
 import BackButton from "./BackButton";
 import Message from "./Message";
 import Spinner from "./Spinner";
+import { useCities } from "../contexts/CitiesContext";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -28,6 +29,7 @@ function Form() {
   const [isLoadingGeoCoding, setIsLoadingGeoCoding] = useState(false);
   const [emoji, setEmoji] = useState("");
   const [geoCodingError, setGeoCodingError] = useState("");
+  const { createCity, isLoading } = useCities();
 
   useEffect(
     function () {
@@ -63,6 +65,16 @@ function Form() {
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    const newCity = {
+      cityName,
+      country,
+      emoji,
+      date,
+      notes,
+      position: { lat, lng },
+    };
+    createCity(newCity);
   }
 
   if (!lat && !lng)
@@ -73,7 +85,10 @@ function Form() {
   if (geoCodingError) return <Message message={geoCodingError} />;
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form
+      className={`${styles.form} ${isLoading ? styles.loading : ""}`}
+      onSubmit={handleSubmit}
+    >
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
