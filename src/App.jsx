@@ -13,6 +13,10 @@ import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/FakeAuthContext";
 import ProtectedRoute from "./pages/ProtectedRoute";
 
+// dist/index.html                   0.48 kB │ gzip:   0.32 kB
+// dist/assets/index-438bc36c.css   29.86 kB │ gzip:   5.05 kB
+// dist/assets/index-30a54f58.js   510.61 kB │ gzip: 146.90
+
 function App() {
   return (
     <AuthProvider>
